@@ -7,7 +7,6 @@ import { AuthModule } from './auth/auth.module';
 import { EmpresaModule } from './empresa/empresa.module';
 import { FuncionarioModule } from './funcionario/funcionario.module';
 import { ReciboModule } from './recibo/recibo.module';
-import { SeedController } from './seed/seed.controller';
 
 @Module({
   imports: [
@@ -18,7 +17,7 @@ import { SeedController } from './seed/seed.controller';
     FuncionarioModule,
     ReciboModule,
   ],
-  controllers: [AppController, SeedController], // ✅ sem UsuarioController aqui
+  controllers: [AppController], // ✅ sem UsuarioController aqui
   providers: [AppService],
 })
 export class AppModule {}
