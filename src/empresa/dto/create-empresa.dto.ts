@@ -9,4 +9,7 @@ export class CreateEmpresaDto {
 
   @IsOptional()
   endereco?: string;
+
+  @IsOptional()
+  contato?: string;
 }
